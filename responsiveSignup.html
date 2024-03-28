@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Basic template</title>
+</head>
+<body>
+   <div class="containerForm">
+    
+    <div class="signUpFormBody">
+        <div class="introTextBody">
+            <p class="loginText">Signup</p>
+        
+            <div class="imageholder">
+            <img src="login.avif" alt="icon" style="margin-top: 3vmin;" height="90" width="95">
+            </div>
+        </div>
+        <form method="POST">
+            <div class="formHolderInput">
+            <input type="text" placeholder="Enter name..."><br>
+            <input type="text" placeholder="Enter parent name..."><br>
+            <input type="email" placeholder="Enter registered email..."><br>
+            <input type="tel" placeholder="Enter mobile number..."><br>
+            <input type="password" placeholder="Enter password..."><br>
+            <p style="font-weight:bold;"><a href="responsiveLogin.html" style="text-decoration: none;color: rgb(5, 141, 199);">Already have an account?</a></p>
+            <button type="submit" class="btn">
+                Login
+            </button>
+
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    
+    /*.banner{
+        width:100vw;
+        display: flex;
+        justify-content: center;
+    
+        background-color:#8CC3EB;
+        flex-wrap: wrap;
+
+    }
+    .border{
+         border: 1px solid black;
+    }
+    
+    .bannerImage{
+        width:90vmin;
+        display: flex; justify-content: center;
+        align-items: center;
+    }* for banner Screen/ 
+/*New Code*/
+/*Small Device Mobiles*/
+@media(max-width:700px){
+    .containerForm{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .signUpFormBody{
+        padding-bottom: 10vmin;
+        width: 90vmin;
+        border: 1px solid black;
+        box-shadow: 3px 2px 1px 1px;
+    
+    }
+    .imageholder{
+        width: 100%;
+        display: flex;
+   
+        justify-content: center;
+
+    }
+    .loginText{
+        text-align: center;
+        margin-top: 2.45vmin;
+        color: rgb(64, 114, 222);
+        font-family: "Mukta";
+        font-size: 5vmin;
+        font-weight: bold;
+        font-weight: 800;
+        font-style: normal;
+    }
+    .formHolderInput{
+        width: 100%;
+  
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3vmin;
+    }
+    .formHolderInput input{
+       
+        margin-top: 1vmin;
+        height: 10vmin;
+        padding: 1.5vmin;
+        width: 93%;
+    }
+    .btn{
+        padding: 1.15vmin;
+        background-color: rgb(11, 101, 220);
+        color: white;
+        margin-top: 2vmin;
+        width: 19vmin;
+        font-size: 3.75vmin;
+        letter-spacing: 0.65;
+        border: 1px solid white;
+    }
+}
+/*Tab Screens*/
+@media(min-width:701px) and (max-width:900px){
+    .containerForm{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .signUpFormBody{
+
+        width: 65vmin;
+        border: 1px solid black;
+        box-shadow: 3px 2px 1px 1px;
+        padding-bottom: 5vmin;
+    }
+    .imageholder{
+        width: 100%;
+        display: flex;
+   
+        justify-content: center;
+
+    }
+    .loginText{
+        text-align: center;
+        margin-top: 2.45vmin;
+        color: rgb(64, 114, 222);
+        font-family: "Mukta";
+        font-size: 5vmin;
+        font-weight: bold;
+        font-weight: 800;
+        font-style: normal;
+    }
+    .formHolderInput{
+        width: 100%;
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3vmin;
+    }
+    .formHolderInput input{
+       
+        margin-top: 1vmin;
+        height: 5.5vmin;
+        padding: 1.5vmin;
+        width: 93%;
+    }
+    .btn{
+        padding: 1vmin;
+        background-color: rgb(11, 101, 220);
+        color: white;
+        margin-top: 2vmin;
+        width: 13vmin;
+        font-size: 3vmin;
+        letter-spacing: 0.65;
+        border: 1px solid white;
+    }
+
+}
+/*---- End for mobile and tab screens ---*/
+
+/*--- For Mini and medium Laptops(13.5eg: macbook-air) */
+@media(min-width:901px) and (max-width:1280px) {
+   
+    @media(max-height:770px) {
+              /*For Lenovo Thinkpad(small X390)*/
+  
+    }
+    @media(min-height:771px) {
+          /*For macbook(13.5 inch screen)*/
+    }
+     
+    }
+
+/*For macbook(13.5inch eg:macbook-air)*/
+/*--- For Mini and medium Laptops(14inch eg: macbook-air) */
+@media(min-width:1281px) and (max-width:1440px){
+   
+}
+
+/*-----End for macbook-air sized laptops(14 inch) ----*/
+
+/*--- For Large laptop screens(15.6inch)(Ex:- HP-Omen)---*/
+@media(min-width:1441px) and (max-width:1727px){
+    .containerForm{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .signUpFormBody{
+
+        width: 65vmin;
+        border: 1px solid black;
+        box-shadow: 3px 5px 1px 2px;
+        padding-bottom: 5vmin;
+    
+    }
+    .imageholder{
+        width: 100%;
+        display: flex;
+   
+        justify-content: center;
+
+    }
+    .loginText{
+        text-align: center;
+        margin-top: 2.45vmin;
+        color: rgb(64, 114, 222);
+        font-family: "Mukta";
+        font-size: 5vmin;
+        font-weight: bold;
+        font-weight: 800;
+        font-style: normal;
+    }
+    .formHolderInput{
+        width: 100%;
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3vmin;
+    }
+    .formHolderInput input{
+       
+        margin-top: 1vmin;
+        height: 5vmin;
+        padding: 1.5vmin;
+        width: 93%;
+    }
+    .btn{
+        padding: 1vmin;
+        background-color: rgb(11, 101, 220);
+        color: white;
+        margin-top: 2vmin;
+        width: 13vmin;
+        font-size: 2.25vmin;
+        letter-spacing: 0.65;
+        border: 1px solid white;
+    }
+}
+/*--- End of Large Screen code ---*/
+/*--- For Very Large laptop screens (Ex:- Large Dell Latitude Screens,Macbook Pro)---*/
+@media(min-width:1728px) and (max-width:2047px){
+    .containerForm{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .signUpFormBody{
+        height: 65vmin;
+        width: 65vmin;
+        border: 1px solid black;
+        box-shadow: 3px 5px 1px 2px;
+    
+    }
+    .imageholder{
+        width: 100%;
+        display: flex;
+   
+        justify-content: center;
+
+    }
+    .loginText{
+        text-align: center;
+        margin-top: 2.45vmin;
+        color: rgb(64, 114, 222);
+        font-family: "Mukta";
+        font-size: 5vmin;
+        font-weight: bold;
+        font-weight: 800;
+        font-style: normal;
+    }
+    .formHolderInput{
+        width: 100%;
+        height: 30vmin;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3vmin;
+    }
+    .formHolderInput input{
+       
+        margin-top: 1vmin;
+        height: 5vmin;
+        padding: 1.5vmin;
+        width: 93%;
+    }
+    .btn{
+        padding: 1vmin;
+        background-color: rgb(11, 101, 220);
+        color: white;
+        margin-top: 2vmin;
+        width: 13vmin;
+        font-size: 2.25vmin;
+        letter-spacing: 0.65;
+        border: 1px solid white;
+    }
+}
+
+/*--- For XX Large screens (Ex:- TVs,IMacs...)---*/
+@media(min-width:2048px){
+    .containerForm{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .signUpFormBody{
+        height: 65vmin;
+        width: 65vmin;
+        border: 1px solid black;
+        box-shadow: 3px 5px 1px 2px;
+    
+    }
+    .imageholder{
+        width: 100%;
+        display: flex;
+   
+        justify-content: center;
+
+    }
+    .loginText{
+        text-align: center;
+        margin-top: 2.45vmin;
+        color: rgb(64, 114, 222);
+        font-family: "Mukta";
+        font-size: 5vmin;
+        font-weight: bold;
+        font-weight: 800;
+        font-style: normal;
+    }
+    .formHolderInput{
+        width: 100%;
+        height: 30vmin;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3vmin;
+    }
+    .formHolderInput input{
+       
+        margin-top: 1vmin;
+        height: 5vmin;
+        padding: 1.5vmin;
+        width: 93%;
+    }
+    .btn{
+        padding: 1vmin;
+        background-color: rgb(11, 101, 220);
+        color: white;
+        margin-top: 2vmin;
+        width: 13vmin;
+        font-size: 2.25vmin;
+        letter-spacing: 0.65;
+        border: 1px solid white;
+    }
+   
+}
+</style>
